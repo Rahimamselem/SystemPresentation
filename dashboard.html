@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-md navbar-dark navbar-fixed-top">
+        <a href="" class="navbar-brand text-light">Dashboard</a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myResponsiveNavBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myResponsiveNavBar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-xl-2 fixed-top sidebar">
+                        <div class="navbar-brand text-uppercase d-block text-center py-2 mx-auto mb-3 border-bottom">
+                            Dashboard
+                        </div>
+                        <div class="border-bottom pb-3">
+                            <a href="">
+                                <img src="image/image1.jpg.jpg" width="50" height="50" class="rounded-circle">
+                            </a>
+                            <a href="" class="text-light text-capitalize ml-3">
+                                admin
+                            </a>
+                        </div>
+                        <ul class="navbar-nav flex-column mt-3">
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link text-light p-3 mb-2 dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-registered fa-lg mr-3 active"></i>
+                                    Register
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a th:href="@{/student_form}" class="dropdown-item">student</a>
+                                    <a href="" class="dropdown-item">staff</a>
+                                    <a href="" class="dropdown-item">dean</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link text-light p-3 mb-2 dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-registered fa-lg mr-3 active"></i>
+                                    View
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">student details</a>
+                                    <a href="" class="dropdown-item">staff </a>
+                                    <a href="" class="dropdown-item">dean confirmation</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    Generate Report
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    Make confirmation
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    <span class="btn btn-dark btn-sm">Logout</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+
+        <script src="bootstrap4/js/all.min.js"></script>
+        <script src="bootstrap4/js/jquery.slim.min.js"></script>
+        <script src="bootstrap4/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap4/js/popper.min.js"></script>
+</body>
+</html>
